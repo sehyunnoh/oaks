@@ -4,8 +4,8 @@ function selectionSort(list) {
   let array = [];
   let length = list.length;
   for (let i = 0; i < length; i++) {
-    // let foundNum = findSmallest(list);
-    let foundNum = findBiggest(list);
+    let foundNum = findSmallest(list);
+    // let foundNum = findBiggest(list);
     let index = list.indexOf(foundNum);
     list = [...list.slice(0, index), ...list.slice(index + 1, list.length)];
     array.push(foundNum);

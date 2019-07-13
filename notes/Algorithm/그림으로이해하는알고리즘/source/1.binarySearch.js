@@ -18,7 +18,6 @@ function bs(list, num) {
       low = mid + 1;
     }
   }
-
   return "none";
 }
 
