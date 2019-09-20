@@ -1,7 +1,7 @@
 # Progress
 
 ## ( 2019-09 )
-| Option     | Angela | Eric | Gil | Won | Yui |
+| Date       | Hyunju | Eric | Gil | Won | Yui |
 | :-:        |:-:     |:-:   |:-:  |:-:  |:-:  |
 | 2019-09-09 |O       |O     |     |O    |O    |
 | 2019-09-10 |O       |O     |     |     |     |
