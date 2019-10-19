@@ -10,7 +10,6 @@
 > - using : C# 키워드
 > - System : 기본 클래스의 네임스페이스
 > - 세미콜론(;) : 문장의 끝 
-> - _ : 줄 바꿈
 
 ## using static System.Console
 > - using static : 데이터 형식의 정적 멤버 사용
@@ -67,9 +66,12 @@
 
 # CLR에 대하여
 ## Common Language Runtime
+> - .net 설치 할때 같이 설치 됨.
 > - C#으로 만든 프로그램의 실행 환경
 > - 중간 언어를 통한 다중 언어 지원
 > - 플랫폼 최적화된 코드 생성 
+> - java의 jvm 같은 것
+> [CLR vs JVM](https://blog.overops.com/clr-vs-jvm-how-the-battle-between-net-and-java-extends-to-the-vm-level/)
 
 ![2-2](images/2-2.jpg)
 
