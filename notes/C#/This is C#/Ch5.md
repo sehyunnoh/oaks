@@ -123,3 +123,18 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 
 - for
 - foreach
+>``` csharp
+>/*[syntax]*/
+>foreach(임시variable in array 또는 collection)
+>{
+>    반복하여 실행할 코드
+>}
+>```
+>``` csharp
+> /*[예제]*/
+>string[] OaksMembers = ["Eric", "Yui", "Angela", "Brian"];
+>foreach(String member in OaksMembers)
+>{
+>    Console.WriteLine(member); // Eric Yui Angela Brian
+>}
+>```
