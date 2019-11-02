@@ -4,8 +4,8 @@
 
 ## 5.1 분기문(Branching statement)
 : 조건에 따라 프로그램의 흐름 변화
-- If-(else if)-else
- - condition이 true/false
++ If-(else if)-else
+- condition이 true/false
 >``` csharp
 >if(number > 0)
 >{
@@ -23,8 +23,8 @@
 >    Console.WriteLine("negative number");
 >}
 >```
-- Switch
- - condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
++ Switch
+- condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
 >``` csharp
 >switch (day)
 >{
@@ -84,15 +84,15 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >}
 
 ## 5.2 반복문(Loop)
-- while
- - [syntax]
++ while
+- [syntax]
 >``` csharp
 >while (조건식)
 >{
 >    반복하여 실행할 코드
 >}
 >```
-[예제]
+- [예제]
 >``` csharp
 >int n = 0;
 >while (n < 5)
@@ -102,8 +102,8 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >}
 >```
 
-- do while: 무조건 한번은 실행
-[syntax]
++ do while: 무조건 한번은 실행
+- [syntax]
 >``` csharp
 >do
 >{
@@ -111,7 +111,7 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >}
 >while(조건식); //while과 다르게 ;사용
 >```
-[예제]
+- [예제]
 >``` csharp
 >int n = 0;
 >
