@@ -24,7 +24,7 @@
 >}
 >```
 - Switch
-:   condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
+- : condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
 >``` csharp
 >switch (day)
 >{
