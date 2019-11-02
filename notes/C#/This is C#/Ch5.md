@@ -3,9 +3,9 @@
 
 
 ## 5.1 분기문(Branching statement)
-: 조건에 따라 프로그램의 흐름 변화
-+ If-(else if)-else
-  - condition이 true/false
+>: 조건에 따라 프로그램의 흐름 변화
+>+ If-(else if)-else
+>  - condition이 true/false
 >``` csharp
 >if(number > 0)
 >{
@@ -23,8 +23,8 @@
 >    Console.WriteLine("negative number");
 >}
 >```
-+ Switch
-  - condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
+>+ Switch
+>  - condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
 >``` csharp
 >switch (day)
 >{
@@ -54,8 +54,8 @@
 >        break;
 >}
 >```
-
-C# 7.0이후 조건식에 데이터타입 사용 가능
+>
+>C# 7.0이후 조건식에 데이터타입 사용 가능
 >``` csharp
 >object obj = null;
 >
@@ -84,7 +84,7 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >}
 
 ## 5.2 반복문(Loop)
-+ while
+>+ while
 >``` csharp
 >/*[syntax]*/
 >while (조건식)
@@ -101,8 +101,8 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >    n++;
 >}
 >```
-
-+ do while: 무조건 한번은 실행
+>
+>+ do while: 무조건 한번은 실행
 >``` csharp
 >/*[syntax]*/
 >do
@@ -120,9 +120,9 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >    Console.WriteLine(n); // 0
 >} while (n > 0);
 >```
-
-- for
-- foreach
+>
+>- for
+>- foreach
 >``` csharp
 >/*[syntax]*/
 >foreach(임시variable in array 또는 collection)
@@ -156,11 +156,11 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >```
 
 ## 5.3 점프문
-: 실행 흐름을 끊거나 실행 위치를 원하는 곳으로 이동
-+ break
-  - 현재 실행중인 Loop 또는 switch문 중단
-+ continue
-  - 반복문 안에서 주로 사용. 현재 반복을 건너 뛰고 반복 계속 수행. 반복 종료X
+>: 실행 흐름을 끊거나 실행 위치를 원하는 곳으로 이동
+>+ break
+>  - 현재 실행중인 Loop 또는 switch문 중단
+>+ continue
+>  - 반복문 안에서 주로 사용. 현재 반복을 건너 뛰고 반복 계속 수행. 반복 종료X
 >``` csharp
 >for(int i = 0; i < 5; i++>)
 >{
@@ -177,9 +177,9 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >       Console.WriteLine(i);
 >}
 >```  
-+ goto
-  - label(레이블, 표지판)이 가리키는 곳으로 바로 건너 뛰는 구문
-  - 실행 흐름을 복잡하게 만들어 가독성이 좋지 않다 => 권장 X
+>+ goto
+>  - label(레이블, 표지판)이 가리키는 곳으로 바로 건너 뛰는 구문
+>  - 실행 흐름을 복잡하게 만들어 가독성이 좋지 않다 => 권장 X
 >``` csharp
 >Console.WriteLine("1");
 >
@@ -191,5 +191,5 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >JUMP:
 >Console.WriteLine("4");
 >``` 
-+ return
-+ throw
+>+ return
+>+ throw
