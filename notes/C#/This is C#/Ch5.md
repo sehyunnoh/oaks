@@ -4,8 +4,7 @@
 
 ## 5.1 분기문(Branching statement)
 >: 조건에 따라 프로그램의 흐름 변화
->+ If-(else if)-else
->  - condition이 true/false
+>+ If-(else if)-else: condition이 true/false
 >``` csharp
 >if(number > 0)
 >{
@@ -23,8 +22,7 @@
 >    Console.WriteLine("negative number");
 >}
 >```
->+ Switch
->  - condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
+>+ Switch: condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
 >``` csharp
 >switch (day)
 >{
@@ -139,7 +137,7 @@
 >    Console.WriteLine(member); // Eric Yui Angela Brian
 >}
 >```
-- Infinite Loop (for, while)
+>- Infinite Loop (for, while)
 >``` csharp
 >/*[syntax]*/
 >for(;;)
