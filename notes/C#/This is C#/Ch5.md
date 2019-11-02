@@ -2,7 +2,7 @@
 *코드의 실행 순서를 자유자재로!*
 
 
-## 5.1 분기문(Branching statement)
+## 5.1 분기문(Selection statement)
 >: 조건에 따라 프로그램의 흐름 변화
 >+ If-(else if)-else: condition이 true/false
 >``` csharp
@@ -81,7 +81,7 @@
 >        break;
 >}
 
-## 5.2 반복문(Loop)
+## 5.2 반복문(Interation)
 >+ while
 >``` csharp
 >/*[syntax]*/
