@@ -160,6 +160,36 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 + break
   - 현재 실행중인 Loop 또는 switch문 중단
 + continue
+  - 반복문 안에서 주로 사용. 현재 반복을 건너 뛰고 반복 계속 수행. 반복 종료X
+>``` csharp
+>for(int i = 0; i < 5; i++>)
+>{
+>    if(i==3)
+>       continue;
+>
+>    Console.WriteLine(i);
+>}
+>``` 
+>``` csharp
+>for(int i = 0; i < 5; i++>)
+>{
+>    if(i!=3)
+>       Console.WriteLine(i);
+>}
+>```  
 + goto
+  - label(레이블, 표지판)이 가리키는 곳으로 바로 건너 뛰는 구문
+  - 실행 흐름을 복잡하게 만들어 가독성이 좋지 않다 => 권장 X
+>``` csharp
+>Console.WriteLine("1");
+>
+>goto JUMP;
+>
+>Console.WriteLine("2");
+>Console.WriteLine("3");
+>
+>JUMP:
+>Console.WriteLine("4");
+>``` 
 + return
 + throw
