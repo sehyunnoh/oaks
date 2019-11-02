@@ -181,13 +181,14 @@
 >``` csharp
 >Console.WriteLine("1");
 >
->goto JUMP;
+>goto JUMP; 
 >
->Console.WriteLine("2");
->Console.WriteLine("3");
+>Console.WriteLine("2"); // NOT printed
+>Console.WriteLine("3"); // NOT printed
 >
 >JUMP:
 >Console.WriteLine("4");
+> //Output: 1 4
 >``` 
 >+ return
 >+ throw
