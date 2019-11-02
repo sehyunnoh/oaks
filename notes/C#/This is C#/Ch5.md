@@ -85,6 +85,21 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 
 ## 5.2 반복문(Loop)
 - while
-- do while
+>``` csharp
+>while (조건식)
+>{
+>    반복하여 실행할 코드
+>}
+>```
+
+>``` csharp
+>int n = 0;
+>while (n < 5)
+>{
+>    Console.WriteLine(n);
+>    n++;
+>}
+>```
+- do while: 무조건 한번은 실행
 - for
 - foreach
