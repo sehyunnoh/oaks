@@ -22,4 +22,33 @@
 >```
 - Switch
 :   condition이 다양한 결과를 한 번에 평가 후 프로그램의 흐름을 나눌 때 사용
- - 사용 형식
+>``` csharp
+>switch (day)
+>{
+>    case "일":
+>        Console.WriteLine("Sunday");
+>        break;
+>    case "월":
+>        Console.WriteLine("Monday");
+>        break;
+>    case "화":
+>        Console.WriteLine("Tuesday");
+>        break;
+>    case "수":
+>        Console.WriteLine("Wednesday");
+>        break;
+>    case "목":
+>        Console.WriteLine("Thursday");
+>        break;
+>    case "금":
+>        Console.WriteLine("Friday");
+>        break;
+>    case "토":
+>        Console.WriteLine("Saturday");
+>        break;
+>    default:
+>        Console.WriteLine($"{day}는(은) 요일이 아닙니다.");
+>        break;
+>}
+>```
+
