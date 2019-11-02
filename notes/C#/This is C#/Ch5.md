@@ -93,7 +93,7 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >}
 >```
 >``` csharp
->/*[예제]*/
+>/*[Example]*/
 >int n = 0;
 >while (n < 5)
 >{
@@ -112,7 +112,7 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >while(조건식); //while과 다르게 ;사용
 >```
 >``` csharp
-> /*[예제]*/
+> /*[Example]*/
 >int n = 0;
 >
 >do 
@@ -131,10 +131,35 @@ C# 7.0이후 조건식에 데이터타입 사용 가능
 >}
 >```
 >``` csharp
-> /*[예제]*/
+> /*[Example]*/
 >string[] OaksMembers = ["Eric", "Yui", "Angela", "Brian"];
+>
 >foreach(String member in OaksMembers)
 >{
 >    Console.WriteLine(member); // Eric Yui Angela Brian
 >}
 >```
+- Infinite Loop (for, while)
+>``` csharp
+>/*[syntax]*/
+>for(;;)
+>{
+>    반복하여 실행할 코드
+>    반복을 멈출 코드 (ex) if(i == 10) break; 
+>}
+>
+>while(true)
+>{
+>    반복하여 실행할 코드
+>    반복을 멈출 코드 (ex) if(i == 10) break; 
+>}
+>```
+
+## 5.3 점프문
+: 실행 흐름을 끊거나 실행 위치를 원하는 곳으로 이동
++ break
+  - 현재 실행중인 Loop 또는 switch문 중단
++ continue
++ goto
++ return
++ throw
