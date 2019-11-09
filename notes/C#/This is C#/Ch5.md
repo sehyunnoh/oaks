@@ -188,7 +188,7 @@
 >
 >JUMP:
 >Console.WriteLine("4");
-> //Output: 1 4
+>//Output: 1 4
 >``` 
 >+ return
 >+ throw
