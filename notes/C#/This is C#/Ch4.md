@@ -20,12 +20,12 @@ https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 |x == y, x != y|Equality|
 |x & y|Boolean logical AND or bitwise logical AND|
 |x ^ y|Boolean logical XOR or bitwise logical XOR|
-|x | y|Boolean logical OR or bitwise logical OR|
+|x \| y|Boolean logical OR or bitwise logical OR|
 |x && y|Conditional AND|
-|x || y|Conditional OR|
+|x \|\| y|Conditional OR|
 |x ?? y|Null-coalescing operator|
 |c ? t : f|Conditional operator|
-|x = y, x += y, x -= y, x *= y, x /= y, x %= y, x &= y, x |= y, x ^= y, x <<= y, x >>= y, x ??= y, =>|Assignment and lambda declaration|
+|x = y, x += y, x -= y, x *= y, x /= y, x %= y, x &= y, x \|= y, x ^= y, x <<= y, x >>= y, x ??= y, =>|Assignment and lambda declaration|
 
 ### Operator associativity
 * Left-associative 
@@ -71,7 +71,7 @@ Some operators evaluate operands conditionally. That is, the value of the leftmo
   * The sign of the non-zero remainder is the same as that of the left-hand operand.
 * Floating-point remainder
 
-		For the float and double operands, the result of x % y for the finite x and y is the value z such that
+    For the float and double operands, the result of x % y for the finite x and y is the value z such that
   * The sign of z, if non-zero, is the same as the sign of x.
   * The absolute value of z is the value produced by |x| - n * |y| where n is the largest possible integer that is less than or equal to |x| / |y| and |x| and |y| are the absolute values of x and y, respectively.
 
