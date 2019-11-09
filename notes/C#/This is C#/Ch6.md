@@ -163,13 +163,13 @@
 >       
 >       carrot.PrintPrice();
 >       Console.WriteLine($"Ref Local Price:{ref_local_price}");
->       Console.WriteLine($"Normal Local Price:{Normal_local_price}");
+>       Console.WriteLine($"Normal Local Price:{normal_local_price}");
 >       //100, 100, 100
 >           
 >       ref_local_price = 200;
 >       carrot.PrintPrice();
 >       Console.WriteLine($"Ref Local Price:{ref_local_price}");
->       Console.WriteLine($"Normal Local Price:{Normal_local_price}");
+>       Console.WriteLine($"Normal Local Price:{normal_local_price}");
 >       //200, 200, 100
 >   } 
 > }
