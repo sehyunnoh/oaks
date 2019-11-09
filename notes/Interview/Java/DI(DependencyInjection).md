@@ -1,5 +1,5 @@
 # Composition has a (일체형)
-- 안에 부품이 뭐가 있는데 알수가 없음
+- 안에 부품이 뭐가 있는지 알수가 없음
 ```java
 class A
 {
