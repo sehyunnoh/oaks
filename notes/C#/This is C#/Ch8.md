@@ -2,8 +2,8 @@
 
 ## 8.1 Interface 선언
 > - 가능한 멤버: method, event, property, indexer?
-> - No implementation
-> - No instance (참조는 가능)
+> - implementation X
+> - instance X (참조는 가능)
 > - public
 > - 인터페이스를 상속받은 클래스의 instance 생성 가능
 >``` csharp
@@ -44,3 +44,11 @@
 >Car car = new MyVehicle();
 >```
 > - 단순한 외형만 상속함으로 내부 구현은 상속자에게 맡김
+
+## 8.5 Abstract class
+> - instance X
+> - implementation O
+> - access modifier O (public, protected, internal, protected internal)
+> - 다른 Abstract class 상속 가능
+>   - 부모 abstract method를 구현할 의무 없음
+> - Derived class에서 abstract method 구현 필수
