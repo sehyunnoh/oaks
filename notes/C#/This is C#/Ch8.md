@@ -21,7 +21,6 @@
 >   }
 >}
 >```
->``` csharp
 >/* No instance (참조는 가능), 인터페이스를 상속받은 클래스의 instance 생성 가능 */
 >ILogger logger = new ConsoleLogger();
 >logger.PrintLog("Hello World");
@@ -38,7 +37,10 @@
 
 ## 8.4 interface의 다중 상속(Multiple Inheritance)
 > - 문제점
->   - 죽음의 다이아몬드 -> 모호성
 >   ![8-4](images/8-4.jpg)
 >   - 업캐스팅의 문제
+>``` csharp
+>Plane plane = new MyVehicle();
+>Car car = new MyVehicle();
+>```
 > - 단순한 외형만 상속함으로 내부 구현은 상속자에게 맡김
