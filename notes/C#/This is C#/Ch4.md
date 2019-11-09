@@ -130,7 +130,7 @@ That is, the produced result of an expression might differ from the expected mat
 ### Conditional logical OR operator ||
 
 ### Nullable Boolean logical operators
-|x|y|x&y|x|y|
+|x|y|x&y|x\|y|
 |---|---|---|
 |true|true|true|true|
 |true|false|false|true|
@@ -197,7 +197,7 @@ Use parentheses, (), to change the order of evaluation.
   * |=
   * ^=
   * <<=
-  * >>=
+  * \>>=
 
 ### Operator precedence
 The following list orders bitwise and shift operators starting from the highest precedence to the lowest:
