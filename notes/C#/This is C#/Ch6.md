@@ -22,10 +22,10 @@
 >   public static void Main()
 >   {
 >       int result = Calculator.Plus(3, 4);
->       Console.WriteLin(result);
+>       Console.WriteLine(result);
 >       
 >       result = Calculator.Minus(5, 2);
->       Console.WriteLin(result);
+>       Console.WriteLine(result);
 >   } 
 > }
 >}
