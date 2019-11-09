@@ -150,6 +150,7 @@ class Derived : Base
 }
 ```
 - 오버라이드와 다름 -> 완전한 다형성 표현의 한계
+
 `sample source: MethodHiding`
 
 # 7.12 오버라이딩 봉인하기 
