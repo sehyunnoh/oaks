@@ -235,4 +235,3 @@ partial class MyClass
   - 명명되지 않은 선언
   - 명명된 선언
 - 튜플 분해
-  - 
