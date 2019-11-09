@@ -100,3 +100,139 @@ class 이름
 - as : 형식 변환 연산자와 같은 역할을 합니다. 다만 형변환 연산자가 변환에 실패하는 경우 예외를 던지는 반면에 as 연산자는 객체 참조를 null로 만든다는 것이 다름. (참조형식에서만 사용함)
 
 `sample source: TypeCasting`
+
+# 7.10 오버라이딩과 다형성
+- 객체가 여러 형태를 가질 수 있음을 의미
+  - 하위 형식 다형성(subtype polymorphism)
+```c#
+class Ironman : ArmorSuite
+{
+    public override void Initialize()
+    {
+        base.Initialize();
+        Console.WriteLine("Repulsor Rays Armed");
+    }
+}
+class WarMachine : ArmorSuite
+{
+    public override void Initialize()
+    {
+        base.Initialize();
+        Console.WriteLine("Double-Barrel Cannons Armed");
+        Console.WriteLine("Micro-Rocket Launcher Armed");
+    }
+}
+```
+- 오버라이딩
+  - 조건: 대상 메서드를 virtual 키워드로 선언
+  - private 로 선언한 메서드는 오버라이딩 불가
+  - 재 정의를 위해 override 키워드 사용
+
+`Sample Source: Overriding`
+
+# 7.11 메서드 숨기기
+- 기반 클래스의 메서드를 감추고 파생 클래스 구현만 표시
+- 파생 클래스 버전의 메서드를 new 한정자로 수식
+```c#
+class Base 
+{
+    public void MyMethod()
+    {
+        Console.WriteLine("Base.MyMethod()");
+    }
+}
+class Derived : Base
+{
+    public new void MyMethod()
+    {
+        Console.WriteLine("Derived.MyMethod()");
+    }
+}
+```
+- 오버라이드와 다름 -> 완전한 다형성 표현의 한계
+`sample source: MethodHiding`
+
+# 7.12 오버라이딩 봉인하기 
+- 메소드의 오버라이딩 봉인
+  - 대상 - virtual 가상 메소드를 오버라이딩한 메서드
+  - 오작동 위험이 있거나 잘못 오버라이딩함으로써 문제가 예상되는 경우
+```c#
+class Base
+{
+    public virtual void SealMe()
+    {
+        //...
+    }
+}
+
+class Derived : Base
+{
+    public sealed void SealMe()
+    {
+        //...
+    }
+}
+```
+`Sample source: SealedMethod`
+
+# 7.13 중첩 클래스
+- 클래스 안에 선언되어 있는 클래스 
+  - 소속되어 있는 클래스의 멤버에 자유롭게 접근 (private 멤버 포함)
+- 선언 형식
+
+```c#
+class OuterClass
+{
+    class NestedClass
+    {
+        //...
+    }
+}
+```
+- 사용 이유
+  - 클래스 외부에 공개하고 싶지 않은 형식을 만들고자 할때
+  - 현재 클래스의 일부처럼 표현 가능한 클래스를 만들고자 할 때
+
+`Sample source: NestedClass`
+
+# 7.14 분할 클래스
+- 여러 번에 나눠서 구현하는 클래스
+  - 클래스의 구현이 길어질 경우 여러 파일에 나눠서 구현
+    - 소스 코드 관리의 편의를 제공
+  - partial 키워드 사용
+- 사용 형식 
+```c#
+partial class MyClass
+{
+    public void Method1(){}
+    public void Method2(){}
+}
+partial class MyClass
+{
+    public void Method3(){}
+    public void Method4(){}
+}
+```
+
+# 7.15 확장 메소드
+- 기존 클래스의 기능을 확장하는 기법
+- 선언 방법
+
+`Sample source: ExtensionMethod`
+
+# 7.16 구조체
+- 클래스 vs 구조체
+  
+![7](images/7-2.jpg)
+
+`Sample source: Structure`
+
+# 7.17 튜플
+- 여러 필드를 담을 수 있는 구조체
+  - 형식의 이름을 갖지 않음
+  - 임시적으로 사용할 복합 데이터 형식 선언에 적합
+- 튜플 선언
+  - 명명되지 않은 선언
+  - 명명된 선언
+- 튜플 분해
+  - 
