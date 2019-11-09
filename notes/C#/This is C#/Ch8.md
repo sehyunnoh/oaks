@@ -37,7 +37,7 @@
 
 ## 8.4 interface의 다중 상속(Multiple Inheritance)
 > - 문제점
->   ![8-4](images/8-4.jpg)
+>   - ![8-4](images/8-4.jpg)
 >   - 업캐스팅의 문제
 >``` csharp
 >Plane plane = new MyVehicle();
