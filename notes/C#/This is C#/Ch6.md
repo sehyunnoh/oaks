@@ -64,7 +64,7 @@
 >   {
 >       int temp = b;
 >       b = a;
->       a = tem[;]
+>       a = temp;
 >   } 
 >
 >   static void Main(string[] args)
@@ -105,14 +105,27 @@
 >```
 > 6.5- 메소드의 결과를 참조로 반환하기 (이때에도 ref를 사용)
 >``` csharp
-> class SomeClass
-> {
->   int SomeValue = 10;
->   public ref int SomeMethod()
->   {
->   return ref SomeValue;
->   } 
-> }
+>using System;
+>					
+>public class Program
+>{
+>	public static void Main()
+>	{
+>		Console.WriteLine(SomeClass.SomeValue);
+>		Console.WriteLine(SomeClass.SomeMethod());
+>		Console.WriteLine(SomeClass.SomeValue);
+>	}
+>}
+>
+>static class SomeClass
+>{
+>  static public int SomeValue = 10;
+>  static public ref int SomeMethod()
+>  {
+>	SomeValue = 12;
+>  	return ref SomeValue;
+>  } 
+>}//10 12 12
 >```
 > 두가지 방식의 반환 방법**
 >``` csharp
