@@ -22,7 +22,7 @@
 >}
 >/* No instance (참조는 가능), 인터페이스를 상속받은 클래스의 instance 생성 가능 */
 >ILogger logger = new ConsoleLogger();
->logger.PrintLog("Hello World");
+>logger.WriteLog("Hello World");
 >```
 
 ## 8.2 Interface는 약속이다
