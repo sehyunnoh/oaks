@@ -20,6 +20,7 @@
 >       Console.WriteLine(message);
 >   }
 >}
+>
 >/* No instance (참조는 가능), 인터페이스를 상속받은 클래스의 instance 생성 가능 */
 >ILogger logger = new ConsoleLogger();
 >logger.WriteLog("Hello World");
