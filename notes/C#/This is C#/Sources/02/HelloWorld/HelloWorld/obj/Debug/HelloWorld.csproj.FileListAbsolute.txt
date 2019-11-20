@@ -1,7 +1,0 @@
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.CodeAnalysisLog.xml
-D:\_workspace\C#\Sample\02\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.lastcodeanalysissucceeded
