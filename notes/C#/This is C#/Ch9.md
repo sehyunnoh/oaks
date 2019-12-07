@@ -72,7 +72,7 @@ public class NameCard{
 <br>
 
 #### 직접 선언한 프로퍼티 vs 자동 구현 프로퍼티
-![alt text](images\2019-11-16Image01.png "직접 선언한 프로퍼티 vs 자동 구현 프로퍼티")
+![alt text](images/2019-11-16Image01.png "직접 선언한 프로퍼티 vs 자동 구현 프로퍼티")
 컴파일러의 선언 형식: <필드명>k_BackingField_
 <br><br><br>
 ## 프로퍼티와 생성자
